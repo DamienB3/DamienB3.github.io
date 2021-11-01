@@ -5,7 +5,8 @@ var cautions = document.getElementById("darkcaution");
 var muscles = document.getElementById("darkmuscles");
 var runs = document.getElementById("darkruns");
 var mails = document.getElementById("darkmails");
-
+var section1 = document.getElementById("muscle");
+var section2 = document.getElementById("contact");
 
 const changeThemeToDark = () =>{
     document.documentElement.setAttribute("data-theme", "dark")
@@ -26,7 +27,10 @@ if(theme === 'dark'){
     document.getElementById("darkmuscles").src = "images/whitemuscles.png";
     document.getElementById("darkruns").src = "images/whiterunning.png";
     document.getElementById("darkmails").src = "images/whitemail.png";
-
+    document.getElementById("muscle").style.backgroundColor = "#5a4e4eb0";
+    document.getElementById("muscle").style.color = "white";
+    document.getElementById("contact").style.backgroundColor = "#5a4e4eb0";
+    document.getElementById("contact").style.color = "white";
 
 }
 
@@ -39,7 +43,10 @@ checkbox.addEventListener('change', ()=> {
         document.getElementById("darkmuscles").src = "images/muscles.png";
         document.getElementById("darkruns").src = "images/running.png";
         document.getElementById("darkmails").src = "images/mails.png";
-
+        document.getElementById("muscle").style.backgroundColor = "#514b4b30";
+        document.getElementById("muscle").style.color = "black";
+        document.getElementById("contact").style.backgroundColor = "#514b4b30";
+        document.getElementById("contact").style.color = "black";
 
     }else{
         changeThemeToDark()
@@ -48,7 +55,10 @@ checkbox.addEventListener('change', ()=> {
         document.getElementById("darkmuscles").src = "images/whitemuscles.png";
         document.getElementById("darkruns").src = "images/whiterunning.png";
         document.getElementById("darkmails").src = "images/whitemail.png";
-
+        document.getElementById("muscle").style.backgroundColor = "#5a4e4eb0";
+        document.getElementById("muscle").style.color = "white";
+        document.getElementById("contact").style.backgroundColor = "#5a4e4eb0";
+        document.getElementById("contact").style.color = "white";
 
     }
    
