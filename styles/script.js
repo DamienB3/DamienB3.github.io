@@ -7,6 +7,8 @@ var runs = document.getElementById("darkruns");
 var mails = document.getElementById("darkmails");
 var section1 = document.getElementById("muscle");
 var section2 = document.getElementById("contact");
+var section02 = document.getElementById("safety");
+var section01 = document.getElementById("cardio");
 
 const changeThemeToDark = () =>{
     document.documentElement.setAttribute("data-theme", "dark")
@@ -31,6 +33,10 @@ if(theme === 'dark'){
     document.getElementById("muscle").style.color = "white";
     document.getElementById("contact").style.backgroundColor = "#5a4e4eb0";
     document.getElementById("contact").style.color = "white";
+    document.getElementById("cardio").style.backgroundColor = "#171717";
+    document.getElementById("cardio").style.color = "white";
+    document.getElementById("safety").style.backgroundColor = "#171717";
+    document.getElementById("safety").style.color = "white";
 
 }
 
@@ -47,6 +53,10 @@ checkbox.addEventListener('change', ()=> {
         document.getElementById("muscle").style.color = "black";
         document.getElementById("contact").style.backgroundColor = "#514b4b30";
         document.getElementById("contact").style.color = "black";
+        document.getElementById("cardio").style.backgroundColor = "white";
+    document.getElementById("cardio").style.color = "black";
+    document.getElementById("safety").style.backgroundColor = "white";
+    document.getElementById("safety").style.color = "black";
 
     }else{
         changeThemeToDark()
@@ -59,7 +69,10 @@ checkbox.addEventListener('change', ()=> {
         document.getElementById("muscle").style.color = "white";
         document.getElementById("contact").style.backgroundColor = "#5a4e4eb0";
         document.getElementById("contact").style.color = "white";
-
+        document.getElementById("cardio").style.backgroundColor = "#171717";
+        document.getElementById("cardio").style.color = "white";
+        document.getElementById("safety").style.backgroundColor = "#171717";
+        document.getElementById("safety").style.color = "white";
     }
    
 });
