@@ -7,6 +7,8 @@
     7) checkbox replace with sun ehh
     8 ) adding spacing between strength containers and fix overlay and responsive
     9) in actual mobile view the background does not change to light. Check if its because some styling is in HTML
+    10) fix mobile scrolling fade in jquery
+    11) Header tips blends into photo
 -->
 <html lang="en" data-theme="light">
 <head>
@@ -18,7 +20,7 @@
     <link rel="icon" href="images/strong.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
- $(document).scroll(function() {
+      $(document).scroll(function() {
   var scrolled = $(this).scrollTop();
   
   if (scrolled > 260) {
@@ -75,7 +77,7 @@
     
 
     <section class="muscle">
-        <div id="muscle" class="muscle" style="background-color: #514b4b30;">
+        <div id="muscle" class="muscle">
         <h1 id="strengthtitle">Building Strength</h1>
         <div id="container">
             <div id="leftitem">
@@ -107,10 +109,10 @@
     </section>
 
     <section class="credits">
-        <div id="contact" class="credits" style="background-color: #514b4b30; height: 100vh;">
+        <div id="contact" class="credits" style="height: 100vh;">
         <h1>Contact</h1>
         </div>
     </section>
-        <script src="styles/script.js"></script>
+    <script src="styles/script.js"></script>
 </body>
 </html>
