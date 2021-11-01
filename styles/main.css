@@ -2,7 +2,6 @@
     color-scheme: light dark;
 }
 body {
-    background-color: #212121;
     height: 100%;
     margin: 0;
 }
@@ -109,11 +108,7 @@ html {
 }
 /* COMMENTING OUT DARK/LIGHT MODE TO FIGURE OUT COLOR SCHEME 
 
-html[data-theme='light']{  
-   background-color: rgba(199, 183, 183, 0.116);
-   color: black;
-  } 
-  
+
 html[data-theme='dark'], .cardio[data-theme='dark'] {
    background-color: #171717;
    color: white;
