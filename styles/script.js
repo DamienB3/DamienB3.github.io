@@ -76,3 +76,16 @@ checkbox.addEventListener('change', ()=> {
     }
    
 });
+function strengths() {
+    count = 0;
+      var strength = document.forms[0];
+      var txt = "";
+      var i;
+      for (i = 0; i < strength.length; i++) {
+        if (strength[i].checked) {
+          txt = txt + strength[i].value + " " + count;
+          count += 1;
+        }
+      }
+      document.getElementById("calcstrengths").innerHTML = "Strengths added: +" + count;
+    };
