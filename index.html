@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>A Better You</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/strong.png">
@@ -91,13 +91,16 @@
             </div>
             
             <div id="rightitem">
-              <p class="paras">Pushups: <input id="boxes" type="checkbox"/><label></label></p>
-              <p class="paras">Pullups: <input id="boxes" type="checkbox"/><label></label></p>
-              <p class="paras">Leg Curls: <input id="boxes" type="checkbox"/><label></label></p>
-              <p class="paras">Arm Curls: <input id="boxes" type="checkbox"/><label></label></p>
-                <p>Strengths added: +___</p>
+                <form>
+              <p class="paras">Pushups: <input id="boxes" name="strength" type="checkbox" onclick="strengths();"/><label></label></p>
+              <p class="paras">Pullups: <input id="boxes" name="strength" type="checkbox" onclick="strengths();"/><label></label></p>
+              <p class="paras">Leg Curls: <input id="boxes" name="strength" type="checkbox" onclick="strengths();"/><label></label></p>
+              <p class="paras">Arm Curls: <input id="boxes" name="strength" type="checkbox" onclick="strengths();"/><label></label></p>
+                <p id="calcstrengths">Strengths added:</p>
                 <br>
+            </form>
             </div>
+
 
         </div>
         </div>
