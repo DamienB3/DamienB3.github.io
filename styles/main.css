@@ -1,6 +1,8 @@
+
+/* Commenting out because it is not compatible with Firefox
 :root {
     color-scheme: light dark;
-}
+} */
 body {
     height: 100%;
     margin: 0;
@@ -63,7 +65,7 @@ html {
 
 /* Removes gap from sections */
  .muscle, .cardio, .credits {
-    margin-top: -18px;
+    margin-top: -1.3em;
 }
 #headertips {
     padding-top: 1em;
