@@ -8,10 +8,11 @@
     8 ) adding spacing between strength containers and fix overlay and responsive
     9) in actual mobile view the background of muscle does not change to light for light mode but text does
     10) fix mobile scrolling fade in jquery
-    11) Header tips blends into photo
     12 ) update margin-top text to fill in gaps but check mobile response
+    13 ) code local storage for checkboxes
+    14) Edit php headers for new email
 -->
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -19,6 +20,9 @@
     <title>A Better You</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/strong.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).scroll(function() {
@@ -49,7 +53,7 @@
         <!--Side Nav bar-->
         <div id="nav">
         <ul id="navlist">
-            <li><a href="#intro"><img id="darkhome" src="images/homes.png" title="Arnold"></a></li>
+            <li><a href="#intro"><img id="darkhome" src="images/homes.png" title="Home"></a></li>
             <li><a href="#safety"><img id="darkcaution" src="images/caution-sign.png" title="Safety Tips"></a></li>
             <li><a href="#muscle"><img id="darkmuscles" src="images/muscles.png" title="Strength Training"></a></li>
             <li><a href="#cardio"><img id="darkruns" src="images/running.png" title="Cardio"></a></li>
@@ -82,7 +86,7 @@
         <h1 id="strengthtitle">Building Strength</h1>
         <div id="container">
             <div id="leftitem">
-               <img src="images/arnoldgif.gif" id="gif"/>
+               <img title="Arnold lifting gif" src="images/arnoldgif.gif" id="gif"/>
             </div>
             <div id="centeritem">
            
@@ -107,14 +111,73 @@
     </section>
 
     <section class="cardio">
-        <div id="cardio" class="cardio" style="height: 100vh;">
-        <h1>Cardio</h1>
+        <div id="cardio" class="cardio">
+        <h1 id="cardiotitle">Cardio</h1>
+        <div id="container">
+            
+            <div id="leftitem">
+                <img title="Arnold rowing gif" src="images/arnoldrow.gif" id="gif2"/>
+             </div>
+            
+            
+
+            <div id="centeritem">
+           
+                <p id="firstpara">It is important to not neglect cardiovasicular activities on your fitness journey. There are multiple ways to get your heart rate up, and move your body:</p>
+    
+                </div>
+
+                <div id="rightitem">
+                    <form>
+                  <p class="paras">Running: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
+                  <p class="paras">Swimming: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
+                  <p class="paras">Biking: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
+                  <p class="paras">Burpees: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
+                    <p id="calccardios">Cardios added:</p>
+                    <br>
+                </form>
+                </div>
+
+
+        </div>
         </div>
     </section>
 
     <section class="credits">
-        <div id="contact" class="credits" style="height: 100vh;">
-        <h1>Contact</h1>
+        <div id="contact" class="credits">
+        <h1>Let's chat</h1>
+        <div class="fcf-body">
+
+            <div id="fcf-form">        
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address:</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" placeholder="Enter your email here:" name="Email" class="fcf-form-control" autofocus="" required="">
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message:</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" placeholder="Any message typed here will be received. Thank you!" name="Message" class="fcf-form-control" rows="4" maxlength="3000" required=""></textarea>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                </div>
+                </form>
+            <footer>
+                <p><a target="_blank" href="https://linkedin.com/in/damien-brooks-a12001105"><img src="images/linkedin.png" id="darklinkedin" width="30" alt=""></a>
+                    <a target="_blank" href="https://github.com/DamienB3"><img src="images/github-logo.png" id="darkgithub" width="30" alt=""></a></p>
+            </footer>
+            </div>
+        
+            
+            </div>
         </div>
     </section>
     <script src="styles/script.js"></script>
