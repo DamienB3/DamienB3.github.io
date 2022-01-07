@@ -11,6 +11,8 @@
     12 ) update margin-top text to fill in gaps but check mobile response
     13 ) code local storage for checkboxes
     14) Edit php headers for new email
+    15 ) increase text size for 4k monitors
+    Check duplicate class names
 -->
 <html lang="en">
 <head>
@@ -39,7 +41,7 @@
 <body>
     <section class="intro" id="intro">
         <div class="introdiv">
-         <img src="images/arnold.jpg" id="arnold" style="width: 100%; height: 100vh;">
+         <img src="images/arnold.jpg" alt="Arnold Posing" id="arnold" style="width: 100%; height: 100vh;">
             <div id="divintro">
             <h1 id="introtitle" style="color: white;">Ready for a <i>healthier</i> you?</h1>
             <h2><a id="introbutton" href="#safety">Get Started</a></h2>
@@ -82,11 +84,11 @@
     
 
     <section class="muscle">
-        <div id="muscle" class="muscle">
+        <div id="muscle">
         <h1 id="strengthtitle">Building Strength</h1>
         <div id="container">
             <div id="leftitem">
-               <img title="Arnold lifting gif" src="images/arnoldgif.gif" id="gif"/>
+               <img title="Arnold lifting gif" alt="Arnold Lifting" src="images/arnoldgif.gif" id="gif"/>
             </div>
             <div id="centeritem">
            
@@ -111,23 +113,23 @@
     </section>
 
     <section class="cardio">
-        <div id="cardio" class="cardio">
+        <div id="cardio">
         <h1 id="cardiotitle">Cardio</h1>
-        <div id="container">
+        <div id="container2">
             
-            <div id="leftitem">
-                <img title="Arnold rowing gif" src="images/arnoldrow.gif" id="gif2"/>
+            <div id="leftitem2">
+                <img title="Arnold rowing gif" alt="Arnold Rowing" src="images/arnoldrow.gif" id="gif2"/>
              </div>
             
             
 
-            <div id="centeritem">
+            <div id="centeritem2">
            
-                <p id="firstpara">It is important to not neglect cardiovasicular activities on your fitness journey. There are multiple ways to get your heart rate up, and move your body:</p>
+                <p id="firstpara2">It is important to not neglect cardiovasicular activities on your fitness journey. There are multiple ways to get your heart rate up, and move your body:</p>
     
                 </div>
 
-                <div id="rightitem">
+                <div id="rightitem2">
                     <form>
                   <p class="paras">Running: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
                   <p class="paras">Swimming: <input id="boxes" name="cardio" type="checkbox" onclick="cardios();"/><label></label></p>
@@ -144,7 +146,7 @@
     </section>
 
     <section class="credits">
-        <div id="contact" class="credits">
+        <div id="contact">
         <h1>Let's chat</h1>
         <div class="fcf-body">
 
