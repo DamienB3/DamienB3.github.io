@@ -277,7 +277,7 @@ html[data-theme='dark'], .cardio[data-theme='dark'] {
     font-size: calc(35px + 6 * ((100vw - 320px) / 680));
    }
     .muscle {
-    margin-top: -3.4em;
+    margin-top: -3.38em;
 }
    
 }
