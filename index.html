@@ -38,6 +38,9 @@
 });
     </script>
         <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+              import smoothscroll from 'smoothscroll-polyfill';
+        smoothscroll.polyfill();
+            
     document.querySelector('#intro').scrollIntoView({ behavior: 'smooth' });
 document.querySelector('#safety').scrollIntoView({ behavior: 'smooth' });
 document.querySelector('#muscle').scrollIntoView({ behavior: 'smooth' });
