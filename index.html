@@ -37,7 +37,13 @@
   }
 });
     </script>
-        <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+        <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+    document.querySelector('#intro').scrollIntoView({ behavior: 'smooth' });
+document.querySelector('#safety').scrollIntoView({ behavior: 'smooth' });
+document.querySelector('#muscle').scrollIntoView({ behavior: 'smooth' });
+document.querySelector('#cardio').scrollIntoView({ behavior: 'smooth' });
+document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    </script>
 </head>
 <body>
     <section class="intro" id="intro">
