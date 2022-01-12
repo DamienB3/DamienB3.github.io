@@ -158,13 +158,6 @@ let count_serialized = JSON.stringify(count);
         document.getElementById("calccardios").innerHTML = "Cardios added: +" + countc; 
       } document.getElementById("calccardios").textContent =  "Cardios added: +" + localStorage.getItem("countingcalc");
     
-document.querySelector('#intro').scrollIntoView({ behavior: 'smooth' });
-document.querySelector('#safety').scrollIntoView({ behavior: 'smooth' });
-document.querySelector('#muscle').scrollIntoView({ behavior: 'smooth' });
-document.querySelector('#cardio').scrollIntoView({ behavior: 'smooth' });
-document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-
-
 
   /* https://stackoverflow.com/questions/51562275/count-total-number-of-checkboxes-what-are-checked-and-show-on-page-via-js */
  /*  var calcs = document.getElementById('calcstrengths');
