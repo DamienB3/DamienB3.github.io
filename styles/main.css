@@ -32,6 +32,8 @@ html {
     scroll-behavior: smooth;
     height: 100%;
     margin: 0;
+    --scroll-behavior: smooth;
+
 }
 /* Text sliding from top */
 @keyframes slideInFromTop {
@@ -101,6 +103,7 @@ html {
 #nav {
     grid-area: menu;
     display: none;
+
   /*  position: fixed;
     top: 150px; */
     
@@ -196,6 +199,7 @@ html[data-theme='dark'], .cardio[data-theme='dark'] {
 #Message {
     width: 25em;
     padding: 7px;
+    max-width: 450px;
 }
 ::placeholder {
     opacity: .8;
@@ -268,7 +272,6 @@ html[data-theme='dark'], .cardio[data-theme='dark'] {
    }
    #headertips {
     font-size: calc(26px + 6 * ((100vw - 320px) / 680));
-       padding-top: 3em;
    }
    #introtitle {
     font-size: calc(30px + 6 * ((100vw - 320px) / 680));
@@ -276,10 +279,26 @@ html[data-theme='dark'], .cardio[data-theme='dark'] {
    #introbutton {
     font-size: calc(35px + 6 * ((100vw - 320px) / 680));
    }
-    .muscle {
-    margin-top: -3.38em;
+   .muscle {
+    margin-top: -3.4em;
 }
    
+}
+#Message {
+    max-height: 130px;
+}
+
+@media screen and (max-width: 1599px){
+#firstpara {
+    font-size: 2.5rem;
+}
+.paras {
+    font-size: 2.5rem;
+}
+#firstpara2 {
+    font-size: 2.5rem;
+}
+
 }
 
 @media screen and (min-width: 1600px){
@@ -294,6 +313,18 @@ html[data-theme='dark'], .cardio[data-theme='dark'] {
     }
     #introbutton {
         font-size: 80px;
+    }
+    #firstpara, #firstpara2 {
+        font-size: 60px;
+    }
+    .paras {
+        font-size: 60px;
+    }
+    #calcstrengths, #calccardios {
+        font-size: 60px;
+    }
+    #Message {
+        max-height: 430px;
     }
 }
 
@@ -350,12 +381,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page
 #rightitem, #rightitem2 {
     padding-right: 0.5em;
     
-}
-#firstpara, #firstpara2 {
-    font-size: 2.5rem;
-}
-.paras {
-    font-size: 2rem;
 }
 #gif {
     width: 100%;
@@ -434,8 +459,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page
     #contact {
         height: 90vh;
     }
+    ::placeholder {
+        font-size: 1.3rem;
+    }
 }
-@media screen and (max-width: 522px){
+@media screen and (max-width: 550px){
    
    
     #fcf-button {
@@ -443,6 +471,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page
     }
     #Message {
         width: 15em;
+        max-width: 15em;
     }
     #Email {
         width: 12em;
