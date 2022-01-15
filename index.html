@@ -20,10 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>A Better You</title>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
-    import smoothscroll from 'smoothscroll-polyfill';
-
-// kick off the polyfill!
-smoothscroll.polyfill();
+     document.querySelector('#darkhome').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#darkcaution').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#darkmuscles').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#darkruns').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#darkmails').scrollIntoView({ behavior: 'smooth' });
     </script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/strong.png">
@@ -56,7 +57,7 @@ smoothscroll.polyfill();
 
 <section class="safety">
 <div id="safety" style="height: 100vh;">
-        <div id="headertips">TestBefore working out, ALWAYS remember to:</div>
+        <div id="headertips">Test2Before working out, ALWAYS remember to:</div>
         <!--Side Nav bar-->
         <div id="nav">
         <ul id="navlist">
